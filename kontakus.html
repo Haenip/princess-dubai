@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kritik dan Sarannya Qaqa</title>
+    <link rel="stylesheet" href="jungkook.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+function tampilWaktu() {
+    const waktu = new Date();
+    const jam = waktu.getHours().toString().padStart(2, '0');
+    const menit = waktu.getMinutes().toString().padStart(2, '0');
+    const detik = waktu.getSeconds().toString().padStart(2, '0');
+
+    document.getElementById("jam").innerHTML =
+        jam + ":" + menit + ":" + detik;
+}
+
+setInterval(tampilWaktu, 1000);
+</script>
+
+<header>
+    <div class="banner">form kritik & saran</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">Tentang</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contactus.html">Contact us</a>
+        <a href="kontakus.html">kritik/saran</a>
+    </nav>
+</header>
+
+    <main>
+    <div class="form-container">
+        <h1>Kritik / Saran</h1>
+
+        <form>
+            <table>
+                <tr>
+                    <td class="label">Nama</td>
+                    <td>
+                        <input type="text" placeholder="masukan Nama Anda">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">Kritik Baik</td>
+                    <td>
+                        <textarea placeholder="masukan Kritiknya"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">Kritik Jahat</td>
+                    <td>
+                        <textarea placeholder="masukan Kritik Jahat"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">Saran Nya Qaqa</td>
+                    <td>
+                        <textarea placeholder="masukan Sarannya"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">Pesan</td>
+                    <td>
+                        <textarea placeholder="masukan Pesan Anda" class="pesan"></textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="form-buttons">
+                <button type="submit">Kirim</button>
+                <button type="reset">Batal</button>
+            </div>
+        </form>
+    </div>
+</main>
+<nav> 
+        <a href="home.html">Back To Home</a>
+    </nav>
+<footer>
+    <p>© 2025 |Haniefa - 251011701200 - 01SIFP014</p>
+    <p id="jam"></p>
+</footer>
+
+
+</body>
+</html>

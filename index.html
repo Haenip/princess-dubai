@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeon Jungkook - Golden Maknae</title>
+    <link rel="stylesheet" href="jungkook.css">
+   
+</head>
+<body>
+
+<script>
+function tampilWaktu() {
+    const waktu = new Date();
+    const jam = waktu.getHours().toString().padStart(2, '0');
+    const menit = waktu.getMinutes().toString().padStart(2, '0');
+    const detik = waktu.getSeconds().toString().padStart(2, '0');
+
+    document.getElementById("jam").innerHTML =
+        jam + ":" + menit + ":" + detik;
+}
+
+setInterval(tampilWaktu, 1000);
+</script>
+
+<header>
+    <div class="banner">jungkook golden-maknae</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">Tentang</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contactus.html">Contact us</a>
+         
+    </nav>
+
+</header>
+
+<main>
+<body>
+
+<h1>Travel The Word</h1>
+<p >"Di bawah sorotan lampu panggung, namanya selalu disebut—Jeon Jungkook. Bukan hanya karena suaranya yang mampu menenangkan dan membakar semangat dalam waktu bersamaan, tapi karena caranya tumbuh: dari remaja pemalu menjadi sosok yang berani bermimpi besar. Setiap langkahnya adalah bukti bahwa kerja keras dan ketulusan bisa membawa seseorang melampaui batas dirinya sendiri.Jeon Jungkook adalah simbol keberanian untuk memulai lebih awal dan belajar tanpa henti. Ia jatuh, bangkit, lalu berlari lebih kencang dari keraguannya. Bersama BTS, ia membuktikan bahwa mimpi seorang anak dari Busan bisa menggema ke seluruh dunia. Jungkook bukan hanya seorang idol, tapi cermin bagi mereka yang berani bermimpi."</p>
+
+<div class="beranda">
+    <div class="box">
+        <img src="jeon2.jpg" alt="Gambar 1">
+        <p><b><a href="gallery.html">jubgkook1</a></b></p>
+    </div>
+
+    <div class="box">
+        <img src="jeon3.jpg
+        " alt="Gambar 2">
+        <p><b><a href="gallery.html">jungkook2</a></b></p>
+    </div>
+
+    <div class="box">
+        <img src="Jeon_.jpg" alt="Gambar 3">
+        <p><b><a href="gallery.html">jungkook3</a></b></p>
+    </div>
+</div>
+</main>
+
+<footer>
+    <p>© 2025 |Haniefa - 251011701200 - 01SIFP014</p>
+    <p id="jam"></p>
+</footer>
+
+</body>
+</html>

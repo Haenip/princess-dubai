@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Jungkook</title>
+    <link rel="stylesheet" href="jungkook.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="banner">The What is What jeykey</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">Tentang</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contactus.html">Contact us</a>
+            
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>About Jeykey is Maknae</h2>
+        <img src="jk6.jpg" alt="Jungkook BTS">
+        
+        <p>
+            Jeon Jungkook adalah lebih dari sekadar seorang idol. Ia adalah simbol pertumbuhan, 
+            kerja keras, dan keberanian untuk bermimpi besar. Lahir di Busan, Korea Selatan, 
+            Jungkook memulai perjalanannya di industri musik pada usia yang sangat muda. 
+            Dari seorang remaja pemalu yang penuh keraguan, ia tumbuh menjadi sosok global icon 
+            yang menginspirasi jutaan orang di seluruh dunia. Sebagai maknae BTS, Jungkook dikenal 
+            dengan julukan "Golden Maknae"—sebuah sebutan yang mencerminkan bakatnya yang serba bisa. 
+            Ia adalah vokalis utama dengan suara yang kuat dan emosional, penari yang presisi, 
+            performer yang karismatik, sekaligus seniman yang terus berkembang. Namun, di balik 
+            semua pencapaian itu, Jungkook tetap menunjukkan sikap rendah hati dan dedikasi yang 
+            tulus terhadap apa yang ia cintai.
+        </p>
+        
+        <p>
+            Perjalanan Jungkook tidak selalu mudah. Ia tumbuh di bawah sorotan publik, menghadapi 
+            tekanan, ekspektasi tinggi, dan proses pendewasaan yang terjadi di depan mata dunia. 
+            Meski begitu, ia memilih untuk terus belajar, memperbaiki diri, dan melangkah maju. 
+            Setiap lagu yang ia nyanyikan dan setiap panggung yang ia injak adalah hasil dari kerja 
+            keras, disiplin, dan cinta yang besar terhadap musik.
+        </p>
+        
+        <p>
+            Kami percaya bahwa Jungkook bukan hanya seorang artis, tetapi juga cerita tentang 
+            keberanian—keberanian untuk bermimpi, gagal, bangkit, dan tetap setia pada diri sendiri. 
+            Melalui karya-karyanya, ia menyampaikan emosi yang jujur: tentang cinta, kehilangan, 
+            harapan, dan pencarian jati diri. Itulah alasan mengapa Jungkook mampu menyentuh hati 
+            banyak orang dari berbagai latar belakang. About Us ini hadir sebagai ruang apresiasi—tempat 
+            untuk merayakan Jungkook sebagai seniman dan sebagai manusia. Kami mendukung setiap langkah 
+            perjalanannya, menghargai proses di balik pencapaian, dan terus menyebarkan pesan positif 
+            yang ia bawa bersama BTS: tentang mencintai diri sendiri, berani bermimpi, dan tidak 
+            menyerah pada keadaan.
+        </p>
+        
+        <p>
+            Kami berdiri bersama Jungkook, bukan hanya saat sorak sorai menggema, tetapi juga saat 
+            ia tumbuh dalam diam. Karena bagi kami, Jungkook adalah inspirasi, harapan, dan bukti 
+            bahwa mimpi yang dijaga dengan ketulusan akan selalu menemukan jalannya.
+        </p>
+    </main>
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 | Haniefa - 251011701200 - 01SIFP014</p>
+        <p id="jam"></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function tampilWaktu() {
+            const waktu = new Date();
+            const jam = waktu.getHours().toString().padStart(2, '0');
+            const menit = waktu.getMinutes().toString().padStart(2, '0');
+            const detik = waktu.getSeconds().toString().padStart(2, '0');
+            document.getElementById("jam").innerHTML = jam + ":" + menit + ":" + detik;
+        }
+        
+        // Panggil fungsi pertama kali
+        tampilWaktu();
+        
+        // Update setiap detik
+        setInterval(tampilWaktu, 1000);
+    </script>
+</body>
+</html>

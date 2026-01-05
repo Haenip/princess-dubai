@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tentang</title>
+    <link rel="stylesheet" href="jungkook.css">
+
+</head>
+<body>
+
+<script>
+function tampilWaktu() {
+    const waktu = new Date();
+    const jam = waktu.getHours().toString().padStart(2, '0');
+    const menit = waktu.getMinutes().toString().padStart(2, '0');
+    const detik = waktu.getSeconds().toString().padStart(2, '0');
+
+    document.getElementById("jam").innerHTML =
+        jam + ":" + menit + ":" + detik;
+}
+
+setInterval(tampilWaktu, 1000);
+</script>
+
+<header>
+    <div class="banner">jeon jungkook Calling </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">Tentang</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contactus.html">Contact us</a>
+         
+    </nav>
+</header>
+
+<main>
+    <h2>About Contact Us</h2>
+    <p>Jungkook, yang dikenal sebagai Golden Maknae, adalah simbol kerja keras, bakat, dan semangat untuk terus berkembang. Melalui dedikasinya dalam musik, penampilan, dan kreativitas, ia menginspirasi jutaan orang untuk berani bermimpi dan percaya pada proses.</p>
+ 
+<p>Halaman Contact Us ini kami hadirkan sebagai ruang komunikasi bagi para penggemar dan pengunjung yang ingin berbagi pendapat, pertanyaan, atau dukungan seputar karya, inspirasi, dan perjalanan Jungkook sebagai seorang artis. Setiap pesan yang masuk adalah bagian dari semangat kebersamaan, layaknya dukungan ARMY yang selalu mengiringi setiap langkah Golden Maknae</p>
+ 
+<p>Dengan itu Bagi Anda Sekalian Yang Tertarik Untuk Mneghubungi Our Team Bisa Memilih/ Memencet Link Dibawah Ini Untuk Menghubungi Kami dan Melakukan/Memberi saran untuk Web Kami</p>
+</main>
+
+<footer>
+    <p>© 2025 |Haniefa - 251011701200 - 01SIFP014</p>
+    <p id="jam"></p>
+     <div class="mt-2">
+        <a href="https://www.instagram.com/bts.bighitofficial" target="_blank" class="text-white me-3">
+            <i class="bi bi-instagram"></i> Instagram
+        </a>
+        <a href="https://wa.me/6281234567890" target="_blank" class="text-white">
+            <i class="bi bi-whatsapp"></i> WhatsApp
+        </a>
+        <a href="kontakus.html" target="_blank" class="text-white">
+            <i class="bi bi-whatsapp"></i> isi form
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
